@@ -5,8 +5,221 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .container {
-  max-width: 1321px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
+:root {
+  --primary-color: #550065;
+  --bg-color: #1e1e1e;
+}
+.active {
+  background-color: var(--primary-color);
+  color: white;
+}
 /* common css end */
+
+/*---------- header css start -----------*/
+header {
+  display: flex;
+  background-color: var(--bg-color);
+  border-radius: 30px;
+}
+
+.header-content {
+  width: 50%;
+  padding: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  color: var(--primary-color);
+}
+
+.btn a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  color: #e8e6d8;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color, background-color 0.5s;
+}
+.btn:hover a {
+  color: var(--primary-color);
+  background-color: white;
+}
+
+.header-image img {
+  height: 10;
+  height: 97%;
+  margin-top: 1rem;
+}
+/* header css end */
+
+/*-------------- all-card-section start -------*/
+.all-blog-section {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: 24% 74%;
+  column-gap: 20px;
+}
+
+/* aside start */
+aside {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: var(--bg-color);
+  height: 250px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+aside a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transform: 0.8s;
+}
+
+aside a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.blog-nav {
+  display: block;
+  margin-top: 10px;
+}
+/* aside end */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.blog {
+  box-shadow: 0 0 40px rgba(0, 01, 0, 0.15);
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.blog-info {
+  padding: 20px;
+}
+
+.blog-info .title {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 15px;
+  border-radius: 5px;
+  transition: 0.8s;
+}
+
+.blog-info .title:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.blog-info span {
+  margin-right: 20px;
+}
+
+.view-btn {
+  display: none;
+}
+
+.view-btn a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transform: 0.8s;
+}
+/* all-card-section end */
+
+/*-------------------- footer start ------------------*/
+footer {
+  background-color: var(--bg-color);
+  margin-top: 100px;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.footer-heading {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+hr {
+  background-color: #550065;
+  height: 1px;
+  border: none;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  margin: 0 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+.footer-icon i {
+  margin: 0 15px;
+  color: white;
+}
+/* footer end */
