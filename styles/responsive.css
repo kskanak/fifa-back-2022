@@ -1,0 +1,110 @@
+/* tablet devices */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  /* header section */
+  header {
+    margin: 20px;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-para {
+    height: 60px;
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .short-para {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  /* all card section */
+  .all-blog-section {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 20px;
+    margin-top: 50px;
+  }
+  aside {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    grid-column-gap: 5px;
+    height: auto;
+    padding: 0;
+  }
+  aside a {
+    border: 1px solid black;
+  }
+  .blog-nav {
+    margin-top: 0;
+  }
+  /* blog section */
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .view-btn {
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* footer start */
+  footer {
+    margin-top: 3rem;
+  }
+  .footer-content {
+    padding: 3rem 0;
+  }
+  .footer-nav ul {
+    padding: 0;
+  }
+  .footer-nav ul li {
+    padding-bottom: 20px;
+  }
+}
+/* mobile-devices */
+@media only screen and (max-width: 688px) {
+  /* header start */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .header-content {
+    text-align: center;
+  }
+
+  /* all card section start */
+  .all-blog-section {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 20px;
+  }
+  aside {
+    background-color: white;
+    text-align: center;
+  }
+  aside a {
+    border: 1px solid black;
+    display: inline;
+    padding: 10px 50px;
+  }
+  /* blog section  start*/
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* footer start */
+  footer {
+    text-align: center;
+  }
+  .footer-content {
+    padding: 10px 0;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-nav ul li {
+    margin-bottom: 15px;
+  }
+}
