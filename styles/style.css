@@ -62,11 +62,12 @@ header {
   color: #e8e6d8;
   font-size: 18px;
   font-weight: 500;
-  transition: color, background-color 0.5s;
+  transition: color 1s, background-color 1s, transform 1s;
 }
 .btn:hover a {
   color: var(--primary-color);
   background-color: white;
+  transform: translateX(20px);
 }
 .header-image {
   width: 50%;
