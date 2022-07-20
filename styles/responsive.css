@@ -1,5 +1,6 @@
 /* tablet devices */
-@media screen and (min-width: 689px) and (max-width: 992px) {
+
+@media screen and (min-width: 688px) and (max-width: 992px) {
   /* header section */
   header {
     margin: 20px;
@@ -21,7 +22,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
   }
-
+  .header-image img {
+    width: 100%;
+    margin-top: 3rem;
+  }
   /* all card section */
   .all-blog-section {
     grid-template-columns: repeat(1, 1fr);
@@ -32,8 +36,8 @@
   aside {
     grid-template-columns: repeat(3, 1fr);
     background-color: white;
-    grid-column-gap: 5px;
-    height: auto;
+    grid-column-gap: 20px;
+    height: 120px;
     padding: 0;
   }
 
@@ -85,10 +89,29 @@
     margin: 20px;
   }
 
+  .header-title {
+    font-size: 1.75rem;
+  }
+
   .header-content {
     text-align: center;
   }
 
+  .header-para {
+    height: 60px;
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .short-para {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .header-image img {
+    margin-top: 0;
+  }
   /* all card section start */
   .all-blog-section {
     grid-template-columns: repeat(1, 1fr);
@@ -96,6 +119,7 @@
   }
 
   aside {
+    height: 200px;
     background-color: white;
     text-align: center;
   }
