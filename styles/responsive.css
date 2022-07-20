@@ -36,7 +36,7 @@
   aside {
     grid-template-columns: repeat(3, 1fr);
     background-color: white;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
     height: 120px;
     padding: 0;
   }
@@ -81,7 +81,7 @@
   }
 }
 /* mobile-devices */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 687px) {
   /* header start */
   .header-container {
     flex-direction: column;
