@@ -82,7 +82,7 @@ header {
 .all-blog-section {
   margin-top: 110px;
   display: grid;
-  grid-template-columns: 24% 74%;
+  grid-template-columns: 312px 1fr;
   column-gap: 20px;
 }
 
